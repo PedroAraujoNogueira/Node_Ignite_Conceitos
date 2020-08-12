@@ -8,7 +8,7 @@
 O projeto é um CRUD, feito em Node. Nesse projeto é gerado um array que vai simular o banco de dados, onde podem ser adicionado projetos, atualizado projetos, deletado projetos e listado os projetos através do Insomnia ou Postman. O objetivo desse projeto é praticar os conceitos iniciais de uma API Rest, de Middlewares, de tipos de parâmetros enviados em uma requisição e de algumas bibliotecas como o Express.  
 
 ### Requisitos de software e bibliotecas:
--> Insominia ou Postman (Para testar as requisições). OBS: o Insomnia so funciona para sistemas 64bits. 
+-> Insominia ou Postman (Para testar as requisições). OBS: o Insomnia so funciona para sistemas 64bits.  
 -> Node.  
 -> npm ou yarn.  
 -> Nodemon. (Faz a atualização automática do servidor todas vez que tivermos alteração no código)  
