@@ -16,6 +16,6 @@ O projeto é um CRUD, feito em Node. Nesse projeto é gerado um array que vai si
 -> Biblioteca Uuidv4. (Cria IDs únicos e universais.)
 
 ### Links úteis:
-Documentação do Express: https://expressjs.com/pt-br/guide/routing.html
-Download do Insomnia: https://insomnia.rest/download/
-Download do Postman: https://www.postman.com/
+Documentação do Express: https://expressjs.com/pt-br/guide/routing.html  
+Download do Insomnia: https://insomnia.rest/download/  
+Download do Postman: https://www.postman.com/  
