@@ -10,10 +10,10 @@ O projeto é um CRUD, feito em Node. Nesse projeto é gerado um array que vai si
 ### Requisitos de software e bibliotecas:
 -> Insominia ou Postman (Para testar as requisições). OBS: o Insomnia so funciona para sistemas 64bits. 
 -> Node.  
--> npm ou yarn.
--> Nodemon. (Faz a atualização automática do servidor todas vez que tivermos alteração no código)
+-> npm ou yarn.  
+-> Nodemon. (Faz a atualização automática do servidor todas vez que tivermos alteração no código)  
 -> Express. (Disponibiliza incluirmos rotas na nossa aplicação e gerencia requisições de diferentes métodos HTTP de maneira fácil e eficiente)   
--> Biblioteca Uuidv4. (Cria IDs únicos e universais.)
+-> Biblioteca Uuidv4. (Cria IDs únicos e universais.)  
 
 ### Links úteis:
 Documentação do Express: https://expressjs.com/pt-br/guide/routing.html  
