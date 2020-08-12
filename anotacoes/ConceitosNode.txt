@@ -1,0 +1,32 @@
+- O que é Node.js?
+
+1. Node é uma plataforma que usa o javascript no back-end.
+2. O back-end não interage com eventos do usuário final.
+3. O back-end é responsável por rotas, integrações, comunicação com serviço de terceiros e etc.
+
+- O que é o NPM(Node Package Manager)? 
+
+1. Instalador de biblioteca de terceiros.
+2. Também é possível fornecer bibliotecas suas através do NPM.
+-> o Yarn funciona basicamente da mesma forma porém é mais poderoso. O yarn é mais rápido e possui algumas funcionalidades a mais como por exemplo quando trabalhamos com multiplos projetos que possuem as mesmas dependencias, o yarn compartilha essas dependenciaseentre os projetos para não termos que instalar as mesmas dependecias em cada projetos.
+
+- Características do Node.
+
+1. Arquitetura event-loop.
+1.1. A Arquitetura event-loop é baseada em eventos.
+2. Call Stack, uma pilha de eventos(funcoes disparadas pelo codigo), onde o Node fica verificando sem parar se tem alguma nova função disparada e fica respondendo as funcoes que já foram adicionadas na pilha(a última função que entra é a primeira que sai).
+3. Node é single-thread.
+3.1. Porém com a ajuda do C++ ele consegue utilizar, por baixo dos panos, multithreads no processamento.
+3.2. Non-Blocking I/O(input e output não bloqueante), ou seja, quando fazemos uma requisição para o Node ele pode responder em partes, ou seja, de forma espaçada a medida que for precisando, pois a conexão não se fecha após a primeira resposta, essa característica é muito importante para chats e várias outras aplicações.  
+
+- Framworks do Node.
+
+1. ExpressJS: utilizaremos ele pelos seguintes motivos:
+1.1. Ele não tem opinião, ou seja, não tem uma estrutura fechada e podemos criar a estrutura da forma que quisermos.
+1.2. Ótimo para iniciar, pois é um microframework, ou seja, tem poucas funcionalidades porém que executam o papel delas muito bem.
+1.3. Micro-serviços, ou seja, dividir uma aplicação em vários serviços menores.
+
+- Frameworks opinados:
+
+1. Adonis.
+2. NestJS.

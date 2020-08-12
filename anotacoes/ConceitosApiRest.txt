@@ -1,0 +1,38 @@
+As rotas utilizam métodos HTTP:
+
+1. GET: Quando queremos buscar alguma informação. 
+Ex1: http://minhaapi.com/users(Route)
+No exemplo abaixo queremos buscar todos os users da company que tiver id 1. 
+Ex2: http://minhaapi.com/company(Route)/1(Route Params)/users(Route)?page=2(Query Params)
+
+2. POST: Quando queremos criar alguma informação. Ex: http://minhaapi.com/users
+Ex2: http://minhaapi.com/company/1/users
+
+3. PUT: Quando queremos alterar informações. Ex: http://minhaapi.com/users/1
+4. PATCH: Normalmente quando queremos atualizar uma informação específica.
+
+5. DELETE: Quando queremos deletar alguma informação. Ex: http://minhaapi.com/users/1
+
+-> Body(Apenas Post e Put): Utilizamos o Body ao invés dos Query Params para não poluir a URL e não mostrar campos sensíveis.
+-> Headers(Qualquer método HTTP): são informações adicionais que não tem haver com o conteúdo da requisição. Normalmente utilizada para enviar informações como autenticação, locale e etc. 
+
+Benefícios de uma API Rest: 
+1. Múltiplos clientes front-end e apenas um back-end.
+2. Comunicação padronizada(JSON -> JavaScript Object Notation).
+
+HTTP Codes:
+
+1. 1xx: Informacional.
+2. 2xx: sucesso.
+3. 3xx: Redirecionamento.
+4. 4xx: Erros do cliente(erros por parte do cliente).
+5. 5xx: Erros do servidor.
+
+Tipos de parâmetros:
+
+1. Query Params: usado principalmente para filtros e paginação(usados quase sempre em requisições do tipo GET).
+- Para usarmos query params começamos com um ponto de interrogação seguido do nome e valor do parametro. Caso queiramos adicionamos mais query params usamos o &. 
+EX1: ?title=React
+EX2: ?title=React&owner=Pedro
+2. Route Params: normalmente usado para identificar recursos na hora de atualizar ou deletar.
+3. Request Body: usado para transportar o conteúdo na hora de criar ou atualizar/editar um recurso(as informações chegam no formato de JSON).
