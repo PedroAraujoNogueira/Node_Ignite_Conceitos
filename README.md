@@ -13,7 +13,8 @@ O projeto é um CRUD, feito com Node, utilizando a famosa biblioteca do **Expres
 -> npm ou yarn.  
 -> Nodemon. (Faz a atualização automática do servidor todas vez que tivermos alteração no código)  
 -> Express. (Disponibiliza incluirmos rotas na nossa aplicação e gerencia requisições de diferentes métodos HTTP de maneira fácil e eficiente)   
--> Biblioteca Uuidv4. (Cria IDs únicos e universais.)  
+-> Biblioteca Uuidv4. (Cria IDs únicos e universais)  
+-> Biblioteca Cors. (Segurança de acesso ao back-end)  
 
 ### Links úteis:
 Documentação do Express: https://expressjs.com/pt-br/guide/routing.html  
