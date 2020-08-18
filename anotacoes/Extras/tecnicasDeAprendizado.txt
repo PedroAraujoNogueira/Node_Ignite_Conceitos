@@ -1,0 +1,38 @@
+- Aprendizado é um processo, exige tempo e determinaçao, todo dia trabalhar um pouco.
+- Praticar muito, mesmo sem entender a teoria por completo. Práticar é essencial.
+- Quando for assistir uma aula, primeiro assista a aula com atençao, prestando atenção em 
+  todos os conceitos e após isso assista a aula novamente copiando o codigo.
+- Controle a ansiedade. Dividir o conteudo que quer ser aprendido em partes menores e ir 
+  conquistando o aprendizado dessas partes. A ansiedade nada mais é do que a falta de 
+  clareza do ponto final onde queremos chegar.
+- Tenha foco. Não adianta fazer 10 cursos de uma vez, foque em dois ou 3 e se dedique 
+  diariamente neles.
+- Não se compare aos conhecimentos dos outros, apenas mantenha o seu foco e siga 
+  disciplinado naquilo. Não compare os seus bastidores com o palco de alguem. Foque apenas
+  em ser melhor do que ontem e aprender algo, faça um calendario de estudos e nao fure 
+  esse calendario, siga a risca o que estiver la.
+- Quando sentar para estudar tire tudo de perto, abra somente a aba do assunto desejado e 
+  foque naquilo, nao deixe youtube nem netflix ti destrair, nem sequer abra outros abas que 
+  nao sejam extremamente necessarias, foque somente no assunto. 
+- Técnicas de concentração: pomodoro é uma boa tecnica de concentração, estabela ciclos de 
+  foco total. Podem ser ciclos de 15 min ou 25 min ou até mesmo de 5 min se estiver com
+  dificuldade, mas mantenha o foco durante esse cilo tente aprender algo e pensar no que 
+  foi aprendido, depois dê uma pausa para descansar o cerebro e comece outro ciclo 
+  novamente. O tempo da pausa nao pode ser longo, 10 min de absoluto descanso é o 
+  recomendavel, apos 2 ou 3 ciclos sua recompensa de descanso pode ser maior.
+- Ajude outras pessoas, assim você além de ajudar alguem tambem estará fixando seus 
+  conhecimentos.
+- Escrever sobre o que você acabou de aprender.
+- Tente explicar para os amigos aquilo que você aprendeu em alguma aula. As perguntas deles
+  sobre o assunto vai fazer você tentar entender melhor e fixar o conhecimento.
+- Não se contente em copiar código, tente alterar o código e ver o que aquela alteração
+  provocou na aplicação.
+- Os problemas e os erros fazem parte do desenvolvimento. Sempre procure resolver o 
+  problema, nao busque ou pesquise pela soluçao que voce acha que serve, mas foque no erro
+  e em como resolver ele. 
+- Uma boa maneira de saber quais parametros um metodo aceita é percorrendo o interior do 
+  método(ctrl ou alt+ctrl e clicando em cima do método, se tiver coisas por dentro desse 
+  método nos poderemos ver).
+- Outra maneira eficiente de tirar suas duvidas é na propria documentaçao da tecnologia 
+  usada, uma ferramenta mto boa é o DevDocs desktop caso precise da documentaçao quando 
+  estiver offline, ele contem a documentacao de varias tecnologias.

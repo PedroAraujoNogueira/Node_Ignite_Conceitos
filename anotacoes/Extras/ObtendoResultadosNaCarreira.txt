@@ -1,0 +1,8 @@
+1. Coloque todos os seus projetos no github.
+2. Crie uma boa descrição do seu projeto. Quais ferramentas você utilizou. Como executar o projeto na máquina após um git clone.
+3. Não esperar se sentir pronto para encarar as oportunidades.
+4. Faça projetos pessoais.
+5. https://github.com/florinpop17/app-ideas, esse site possui ideias sobre projetos que você pode fazer.
+6. Faça um linkedin.
+7. Coloque seus projetos no ar, mesmo que não estejam prontos, para que qualquer pessoa possa usar e testar.
+8. Busque inspiração para fazer suas aplicações em sites como pinterest e dribbble.

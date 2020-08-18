@@ -1,0 +1,6 @@
+1. A ferramenta Whimsical é ótima para fazer mapas mentais, fluxos de desenvolvimento de uma aplicação e até desenhos da aplicação.
+
+2. DevDocs, centralizador de Documentação, de várias ferramentas, disponível offline.
+
+3. Insominia: é um cliente HTTP que vai permitir fazermos requisições na nossa API sem precisar usar o browser.
+https://insomnia.rest/download/

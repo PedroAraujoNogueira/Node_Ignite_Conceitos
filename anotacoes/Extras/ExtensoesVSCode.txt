@@ -1,0 +1,11 @@
+1. dracula official -> para um tema mais amigável do VsCode e mudança de cores durante o desenvolvimento do seu código.   
+
+2. Color Highlight -> Toda vez que tivermos uma cor(seja em hexadecimal ou nao) ele vai mostrar uma prévia da cor ao passarmos o mouse por cima.
+
+3. EditorConfig for VSCode -> ferramenta que permite configurar o nosso editor(VSCode) entre todos os desenvolvedores do time, ou seja, padroniza o VSCode do time.    
+
+4. EsLint -> ferramenta que garante que tenha padrões de desenvolvimento dentro do nosso projeto.
+
+5. Prettier -> Automatiza a execução do EsLint. Deve ser adicionado no arquivo settings.json(global do VSCode) as seguintes linhas:
+"editor.formatOnSave": true,
+"prettier.eslintIntegration": false

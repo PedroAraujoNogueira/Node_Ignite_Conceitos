@@ -1,0 +1,13 @@
+1. Para vermos se o Git já está instalado em nossa máquina usamos o comando:
+git --version
+
+2. Caso não apareça nenhuma versão no passo anterior então vá no site do git para baixá-lo:
+https://git-scm.com/
+Baixe a ferramenta.
+
+3. Após baixar o Git faça as configurações iniciais. O site a seguir detalha os passos para as configurações iniciais porém você pode basicamente configurar seu nome e email de acordo como mostra a documentação abaixo.
+https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup
+
+4. Faça uma conta no GitHub que é a plataforma que utiliza o Git por trás. o GitHub alem de servir como um portifólio e repositório é uma ferramenta poderosa de trabalho em equipe.
+
+5. Dentro da sua pasta pessoal terá um arquivo .gitconfig onde terão as configurações do git.
