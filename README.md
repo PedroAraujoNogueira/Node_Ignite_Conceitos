@@ -2,7 +2,8 @@
 
 ### Como executar o projeto:
 ->  Digito no terminal o comando **yarn install** para baixar todas as dependências do projeto.  
-->  Digite no terminal **yarn dev** para executar o projeto com o nodemon.
+->  Digite no terminal **yarn dev** para executar o projeto com o nodemon.  
+-> Use o Postman o Insomnia uma Aplicação Web ou até mesmo outra API para chamar as rotas do deste projeto que estão em src/routes.js.  
 
 ### Descrição do projeto: 
 O projeto é um CRUD, feito com Node, utilizando a famosa biblioteca do **Express** e explorando várias das funcionalidades dessa biblioteca. Nesse projeto é gerado um array que vai simular o banco de dados, onde podem ser adicionado projetos, atualizado projetos, deletado projetos e listado os projetos através do Insomnia ou Postman. O objetivo desse projeto é praticar os conceitos iniciais de uma API Rest, de Middlewares, de tipos de parâmetros enviados em uma requisição e de algumas bibliotecas como o Express.  
