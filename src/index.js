@@ -2,7 +2,7 @@
 
 const express = require('express') 
 const cors = require('cors')
-const { uuid, isUuid } = require('uuidv4')
+const { uuid, isUuid } = require('uuidv4') // Essa biblioteca vai gerar um id unico e universal.
 
 const app = express()
 app.use(cors()) // Dessa forma o back-end está dizendo que permite que qualquer front-end vai ter acesso ao nosso back-end.
@@ -14,7 +14,7 @@ app.use(express.json()) // O método use() é usado quando queremos adicionar al
 
 const projects = []
 
-function logRequests1(request, response, next){
+function logRequests1(request, response, next){ 
     const { method, url } = request
 
     const logLabel = `[${method.toUpperCase()} ${url}]`
@@ -85,6 +85,7 @@ app.post('/projects1', (request, response) => {
     return response.json(project)
 })
 
+// O Patch vai funcionar da mesma forma do Put.
 app.put('/projects1/:id', validateProjectId, (request, response) => { // Os ":" significa que vamos receber um parametro de rota(Route params) para indicar qual projeto queremos atualizar.
     
     // const params = request.params // Route Params.
@@ -131,6 +132,6 @@ app.delete('/projects1/:id', validateProjectId, (request, response) => {// Os ":
     return response.status(204).send() // Quando é uma responsa que não tem conteúdo é recomendado que enviemos com o código 204.
 })
         
-app.listen((3333), () => {
+app.listen((3333), () => { // É a função que escuta os eventos na porta específicada.
     console.log('back-end started!') // Essa mensagem será colocada no terminal toda vez que subirmos o servidor.
 }) 

@@ -8,16 +8,46 @@
 
 1. Instalador de biblioteca de terceiros.
 2. Também é possível fornecer bibliotecas suas através do NPM.
--> o Yarn funciona basicamente da mesma forma porém é mais poderoso. O yarn é mais rápido e possui algumas funcionalidades a mais como por exemplo quando trabalhamos com multiplos projetos que possuem as mesmas dependencias, o yarn compartilha essas dependenciaseentre os projetos para não termos que instalar as mesmas dependecias em cada projetos.
+-> o Yarn funciona basicamente da mesma forma porém é mais poderoso. 
+O yarn é mais rápido e possui algumas funcionalidades a mais como por exemplo 
+quando trabalhamos com multiplos projetos que possuem as mesmas dependencias, o yarn 
+compartilha essas dependenciaseentre os projetos para não termos que instalar as mesmas
+dependecias em cada projetos.
 
-- Características do Node.
+- Características do Node:
 
-1. Arquitetura event-loop.
-1.1. A Arquitetura event-loop é baseada em eventos.
-2. Call Stack, uma pilha de eventos(funcoes disparadas pelo codigo), onde o Node fica verificando sem parar se tem alguma nova função disparada e fica respondendo as funcoes que já foram adicionadas na pilha(a última função que entra é a primeira que sai).
-3. Node é single-thread.
-3.1. Porém com a ajuda do C++ ele consegue utilizar, por baixo dos panos, multithreads no processamento.
-3.2. Non-Blocking I/O(input e output não bloqueante), ou seja, quando fazemos uma requisição para o Node ele pode responder em partes, ou seja, de forma espaçada a medida que for precisando, pois a conexão não se fecha após a primeira resposta, essa característica é muito importante para chats e várias outras aplicações.  
+1. O Node é uma plataforma open-source que permite a execução do javascript do 
+lado do servidor.
+
+2. O Node é composto da V8(interpretador de javascript criado pelo google) + libuv + 
+módulos próprios.
+
+3. Tem uma arquitetura chamada Event Loop, composta por uma Call Stack(Por se tratar 
+de uma pilha, o evento que entra por último sai primeiro).
+-> Uma forma simples de entender o event loop é por exemplo num servidor 
+HTTP. Quando um pedido HTTP chegar ao seu servidor Node é inserido um novo
+item para processar na lista de eventos. E em determinado ponto o Node chamará o
+código que você tem registado para tratar esse evento.
+
+4. É single Thread. Ou seja, o Event Loop fica escutando uma função/evento de cada vez(o event loop
+é single thread), porém a medida que ele escuta a ação ele envia essa ação para uma Thread que esteja
+disponível. Por padrão o Node tem 4 Threads disponíveis.
+-> Libuv tem um tamanho de pool de threads padrão de 4, e usa uma fila para gerenciar 
+o acesso ao pool de threads - a conclusão é que se você tiver 5 consultas de banco de
+dados de longa duração, todas ao mesmo tempo, uma delas (e qualquer outra assíncrona 
+ação que depende do pool de threads) estará aguardando a conclusão dessas consultas 
+antes mesmo de começar.
+-> Observe, no entanto, que o ajuste de UV_THREADPOOL_SIZE pode fazer mais sentido 
+para um aplicativo independente como uma CLI escrita em Node.js. Se você está configurando
+vários processos Node.js usando o módulo de cluster, eu ficaria surpreso se o ajuste de
+UV_THREADPOOL_SIZE fosse particularmente benéfico para você. Mas se seu aplicativo se 
+assemelha aos benchmarks de ferramentas da web, o ajuste de UV_THREADPOOL_SIZE pode ajudar
+no desempenho.
+Para mais informações podemos ver a documentação do Node:
+https://nodejs.org/api/cli.html#cli_uv_threadpool_size_size
+
+5. Non-Blocking I/O, ou seja, ele pode executar uma função antes de terminar de executar 
+a função anterior.  
 
 - Framworks do Node.
 

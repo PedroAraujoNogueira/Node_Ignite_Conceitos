@@ -1,0 +1,58 @@
+As rotas utilizam métodos HTTP:
+
+1. GET: Quando queremos buscar alguma informação. 
+Ex1: http://minhaapi.com/users(Route)
+No exemplo abaixo queremos buscar todos os users da company que tiver id 1. 
+Ex2: http://minhaapi.com/company(Route)/1(Route Params)/users(Route)?page=2(Query Params)
+
+2. POST: Quando queremos criar alguma informação. Ex: http://minhaapi.com/users
+Ex2: http://minhaapi.com/company/1/users
+
+3. PUT: Quando queremos alterar informações. Ex: http://minhaapi.com/users/1
+4. PATCH: Normalmente quando queremos atualizar uma informação específica.
+
+5. DELETE: Quando queremos deletar alguma informação. Ex: http://minhaapi.com/users/1
+
+-> Body(Apenas Post e Put): Utilizamos o Body ao invés dos Query Params para não poluir a URL e não mostrar campos sensíveis.
+-> Headers(Qualquer método HTTP): são informações adicionais que não tem haver com o conteúdo da requisição. Normalmente utilizada para enviar informações como autenticação, locale e etc. 
+
+Benefícios de uma API Rest: 
+1. Múltiplos clientes front-end e apenas um back-end.
+2. Comunicação padronizada(JSON -> JavaScript Object Notation).
+
+HTTP Codes:
+-> Número de 3 dígitos onde o primeiro dígito vai definir a qual classe o código pertence.
+
+1xx: Informativo - A solicitação foi aceita ou o processo continua em andamento.
+2xx: Confirmação
+    -> 200: Requisição bem sucedida. 
+    -> 201: Created - Geralmente usado para POST após uma inserção.
+3xx: Redirecionamento
+    -> 301: Moved Permanently. 
+    -> 302: Moved.
+4xx: Erro do Cliente
+    -> 400: Bad Request. 
+    -> 401: Unauthorized(não autorizado).
+    -> 403: ForbiddenEsse status é semelhante ao 401 , mas neste caso, a re-autenticação 
+    não fará diferença. O acesso é permanentemente proibido e vinculado à lógica 
+    da aplicação (como uma senha incorreta).
+    -> 404: Not Found.
+    -> 422: Unprocessable Entity.
+5xx: Erro no servidor -> O servidor falhou ao concluir a solicitação.
+    -> 500: Internal Server Error. 
+    -> 502: Bad Gateway.
+
+Tipos de parâmetros:
+
+1. Query Params: Parâmetros inseridos no final de uma URL, usado principalmente para filtros 
+e paginação(usados quase sempre em requisições do tipo GET). São parametros opcionais.
+- Para usarmos query params começamos com um ponto de interrogação seguido do nome e valor do parametro. Caso queiramos adicionamos mais query params usamos o &. 
+EX1: www.enderecoservidor.com.br/users?page=2&limit=50.
+EX2: ex: www.enderecoservidor.com.br/users?title=React&owner=Pedro
+2. Route Params: Parâmetros que vão no meio da rota. ex: www.enderecoservidor.com.br/users/{id}
+Usado para buscar, atualizar e deletar(GET, PUT e DELETE). Os Routes params fazem parte 
+da rota, logo são obrigatórios, diferente dos Query Params.
+3. Request Body: Parâmetros enviados no corpo da requisição. Usado para transportar o 
+conteúdo na hora de criar ou atualizar (POST/PUT) um recurso(as informações chegam 
+no formato de JSON).
+4. Header Params: Parâmetros passados no cabeçalho da requisição.

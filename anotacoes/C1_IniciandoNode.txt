@@ -4,7 +4,8 @@ Para iniciar uma aplicação no Node devemos utilizar o comando yarn init -y, el
 2. yarn add express.
 O express é um micro-framework e da a disponibilidade de incluirmos rotas em nossa aplicação e ele alem de gerenciar essas rotas tambem gerencia os middlewares. 
 
-3. Para rodar a aplicação devemos colocar no terminal: node src/index.js, o nome do arquivo não precisa ser index.js, poderia ser qualquer outro nome com a extensão .js
+3. Para rodar a aplicação devemos colocar no terminal: node src/index.js, o nome do arquivo
+não precisa ser index.js, poderia ser qualquer outro nome com a extensão .js
 
 4. yarn add nodemon -D. 
 Serve para atualizar automaticamente o servidor toda vez que tivermos alteração no código. Então não precisamos mais ficar reiniciando o servidor manualmente, basta darmos um F5 na página no browser.
@@ -17,3 +18,5 @@ Então agora só precisamos escrever no terminal o nome do script que acabamos d
 yarn dev.
 
 5. yarn add cors. Toda vez que o front-end vai se comunicar com o back-end ele precisa passar pelas técnicas de segurança do back-end, para evitar que qualquer front-end possa se comunicar com nosso back-end por exemplo. Uma dessas técnicas de segurança é o cors ou Cross-Origin Resource Sharing (Compartilhamento de recursos com origens diferentes). Ou seja, o front-end só conseguirá se comunicar com o back-end se o cors do back-end estiver permitindo acesso para aquele front-end.
+
+6. Observe que todas as dependencias que adicionamos estarão listadas no package.json.
